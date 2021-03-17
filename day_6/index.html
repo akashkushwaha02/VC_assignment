@@ -19,10 +19,10 @@
       input {
         border-radius: 5px;
         padding: 5px;
+        width: 350px;
       }
 
       .container {
-        border: 2px solid red;
         text-align: center;
         background-color: cornsilk;
         display: flex;
@@ -30,32 +30,46 @@
         text-align: justify;
       }
       h1 {
-        text-align: center;
+      }
+
+      button {
+        width: 50%;
+        height: 50px;
+        background-color: darkgreen;
+        border-radius: 5px;
+      }
+
+      option {
+        width: 300px;
+        padding: 5px;
+        border-radius: 5px;
+        padding: 5px;
       }
     </style>
   </head>
   <body>
+    <h1>Registration Form</h1>
     <!--
         Fields = 'profile_picture','name','email','password','phone number',gender,dob,address,pincode,city,state,country,terms and condition, submit 
       -->
     <div class="container">
       <form>
         <div class="form-group">
-          <label>Upload your image</label>
+          <label>Upload your image : </label>
           <input type="file" accept=".png,.jpeg,.jpg" name="profile_picture" />
         </div>
         <div class="form-group">
-          <label>Full Name</label>
+          <label>Full Name : </label>
           <input
             type="text"
             required
             name="name"
-            pattern="{a-z,A-Z}"
+            pattern="[A-Za-z]"
             placeholder="please enter your full name"
           />
         </div>
         <div class="form-group">
-          <label>Email</label>
+          <label>Email : </label>
           <input
             type="email"
             name="email"
@@ -64,7 +78,7 @@
           />
         </div>
         <div class="form-group">
-          <label>password</label>
+          <label>password : </label>
           <input
             type="password"
             name="pass"
@@ -73,7 +87,7 @@
           />
         </div>
         <div class="form-group">
-          <label>Retype password</label>
+          <label>Retype password :</label>
           <input
             type="password"
             name="retypePass"
@@ -82,7 +96,7 @@
           />
         </div>
         <div class="form-group">
-          <label>Phone</label>
+          <label>Phone : </label>
           <input
             type="number"
             name="phone"
@@ -93,21 +107,23 @@
         </div>
 
         <div class="form-group">
-          <label>Gender</label>
-          <input type="radio" name="Male" />Male
-          <input type="radio" name="Female" />Female
-          <input type="radio" name="Other" />Other
+          <label>Gender : </label>
+          <select name="Gender">
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+            <option value="Other">Other</option>
+          </select>
         </div>
         <div class="form-group">
-          <label>Date of Birth</label>
+          <label>Date of Birth : </label>
           <input type="date" name="DOB" />
         </div>
         <div class="form-group">
-          <label>address</label>
+          <label>address : </label>
           <textarea></textarea>
         </div>
         <div class="form-group">
-          <label>City</label>
+          <label>City : </label>
           <select name="city">
             <option value="">Select your city</option>
             <option value="Jabalpur">Jabalpur</option>
@@ -115,7 +131,7 @@
           </select>
         </div>
         <div class="form-group">
-          <label>State</label>
+          <label>State : </label>
           <select name="state">
             <option value="">Select your state</option>
             <option value="MP">MP</option>
@@ -123,19 +139,21 @@
           </select>
         </div>
         <div class="form-group">
-          <label>country</label>
+          <label>country : </label>
           <select name="country">
             <option value="">Select your country</option>
             <option value="india" selected>India</option>
             <option value="other">other</option>
           </select>
         </div>
-        <!--
-              Fields = 'profile_picture','name','email','password','phone number',gender,dob,address,pincode,city,state,country,terms and condition, submit 
-            -->
-        <div class="form-group">
-          <input type="checkbox" required name="tandC" />
-          <label>Terms & conditions</label>
+        <div>
+          <label style="">Terms & conditions</label>
+          <input
+            type="checkbox"
+            required
+            name="tandC"
+            style="align-items: left; margin-left: -150px"
+          />
         </div>
         <div class="form-group">
           <button type="submit">Submit</button>
