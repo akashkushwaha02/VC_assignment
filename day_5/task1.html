@@ -1,22 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VC assignment | Day 5 </title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VC assignment | Day 5</title>
+  </head>
+  <body>
     <h1>HTML form assignment</h1>
-        <form>
-            <input type="email" name="email" placeholder="Email" required  /><br /><br />            
-            <input type="password" name="password" minlength="8" placeholder="Please enter password minimum length 8 " /><br /><br />
-            <input type="text" name="number" maxlength="10"  required placeholder="Please enter your phone number "/><br /><br /> 
-            <br /> 
-            <button type="submit" >Submit</button>
-            <br />
-            
-        </form>
-    
-</body>
+    <form>
+      <input
+        type="email"
+        name="email"
+        placeholder="Email"
+        required
+      /><br /><br />
+      <input
+        type="password"
+        name="password"
+        minlength="8"
+        placeholder="Please enter password minimum length 8 "
+      /><br /><br />
+      <input
+        type="text"
+        name="number"
+        maxlength="10"
+        required
+        placeholder="Please enter your phone number "
+      /><br /><br />
+      <br />
+      <p onmouseover="getLocation()" style="border: 1px solid red">
+        Hover over me to know Your location: <p id="loc"></p>
+      </p>
+      
+      <button type="submit">Submit</button>
+      <br />
+    </form>
+
+    <script>
+      var loc = document.getElementById("loc");
+      function getLocation() {
+        console.log("inside getlocation");
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+          loc.innerHTML = "Geolocation is not supported by this browser.";
+        }
+      }
+
+      function showPosition(position) {
+        loc.innerHTML =
+          "Latitude: " +
+          position.coords.latitude +
+          " Longitude: " +
+          position.coords.longitude;
+      }
+    </script>
+  </body>
 </html>
