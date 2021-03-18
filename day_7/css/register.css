@@ -30,7 +30,7 @@ input {
   padding: 10px;
   font-size: large;
   left: 400px;
-  top: 150px;
+  top: 120px;
   font-weight: 900;
 }
 
@@ -42,12 +42,25 @@ input {
   padding: 10px;
   border: none;
   left: 400px;
-  top: 150px;
+  top: 120px;
 }
 
 .middle_txt {
   position: relative;
   color: white;
   left: 30%;
-  top: 150px;
+  top: 120px;
+}
+
+#big_txt {
+  position: relative;
+  left: 31%;
+  font-weight: bolder;
+  font-size: 50px;
+}
+
+#small_txt {
+  position: relative;
+  left: 35%;
+  font-size: 20px;
 }
