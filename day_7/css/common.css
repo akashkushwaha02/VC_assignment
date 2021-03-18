@@ -5,6 +5,11 @@ body {
   position: absolute;
 }
 
+.container {
+  position: relative;
+  opacity: 0.4;
+}
+
 #Netflix_label {
   color: crimson;
   font-weight: 1000;
