@@ -6,27 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Netflix registration | day_7</title>
     <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/register.css" />
   </head>
   <body>
     <div class="container">
-      <header>
+      <div id="bg_image">
+        <img src="./images/image.jpg" width="100%" />
+      </div>
+
+      <header class="header">
         <span id="Netflix_label">Netflix</span>
-        <nav>
-          <button class="lang_btn"><b>English</b></button>
-          <button class="signup_btn">Sign up</button>
+        <nav class="nav_bar">
+          <button id="lang_btn">English</button>
+          <button id="signup_btn">Sign In</button>
         </nav>
       </header>
 
       <section>
-        <h2>Unlimited movies,TV shows and more.</h2>
-        <h5>Watch anywhere. Cancel anytime.</h5>
+        <h2 class="middle_txt">
+          Unlimited movies,TV <br />
+          shows and more.
+        </h2>
+        <h5 class="middle_txt">Watch anywhere. Cancel anytime.</h5>
 
-        <p>
+        <p class="middle_txt">
           Ready to watch?Enter your email to create or restart your membership.
         </p>
 
         <input type="email" placeholder="Email address" />
-        <button>Get Started ></button>
+        <button class="getStarted">Get Started ></button>
       </section>
       <footer></footer>
     </div>
