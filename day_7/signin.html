@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/signin.css" />
     <title>Netflix signup | day_7</title>
   </head>
   <body>
@@ -13,10 +14,41 @@
         <img src="./images/image.jpg" width="100%" />
       </div>
       <header>
-        <span id="Netflix_label">Netflix</span>
+        <span id="Netflix_label">NETFLIX</span>
       </header>
+      <section class="card"></section>
+      <section class="inside_card">
+        <div class="form-group">
+          <h1 id="signIn_label">Sign In</h1>
+          <form>
+            <input
+              type="email"
+              placeholder="Email or username"
+              class="input_tag"
+            /><br />
+            <input
+              type="password"
+              placeholder="Password"
+              class="input_tag"
+            /><br />
+            <button
+              id="signin_btn"
+              onclick="window.location.href = 'register.html';"
+            >
+              Sign In</button
+            ><br />
+            <input type="checkbox" />
+            <span id="remember">Remember me</span
+            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="register.html">Need help?</a>
+          </form>
+        </div>
 
-      <section></section>
+        <div id="extra">
+          Login with facebook <br />New to Netflix?
+          <a href="register.html" style="color: white">Signup Now</a>
+        </div>
+      </section>
       <footer></footer>
     </div>
   </body>

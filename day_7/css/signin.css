@@ -1,0 +1,71 @@
+.card {
+  position: absolute;
+  height: 500px;
+  width: 350px;
+  left: 36%;
+  top: 90px;
+  background-color: black;
+  opacity: 0.6;
+}
+
+.inside_card {
+  position: relative;
+  height: 500px;
+  width: 350px;
+  left: 37%;
+  top: 40px;
+}
+
+#signIn_label {
+  position: relative;
+  color: white;
+  left: 5px;
+  font-size: 30px;
+}
+
+.form-group {
+  position: relative;
+  left: 30px;
+  top: 30px;
+}
+
+.input_tag {
+  background-color: #323332;
+  color: #7f8182;
+  border: none;
+  padding: 15px;
+  width: 65%;
+  border-radius: 5px;
+  margin: 08px;
+}
+
+#signin_btn {
+  border: none;
+  position: relative;
+  padding: 14px;
+  background-color: #e5111d;
+  border-radius: 4px;
+  color: white;
+  font-weight: 800;
+  left: 10px;
+  margin-top: 20px;
+  width: 73%;
+  cursor: pointer;
+}
+
+#remember {
+  color: #7f8182;
+}
+
+a {
+  text-decoration: none;
+  color: #7f8182;
+  cursor: pointer;
+}
+
+#extra {
+  color: #7f8182;
+  margin-left: 40px;
+
+  margin-top: 60px;
+}
