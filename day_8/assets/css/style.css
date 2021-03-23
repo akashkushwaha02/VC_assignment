@@ -1,0 +1,170 @@
+body {
+  background-color: black;
+  font: Verdana;
+  color: rgb(217, 217, 217);
+}
+
+.container {
+  border: 2px solid red;
+  height: 600px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.svg_icon_size {
+  height: 2rem;
+  fill: #d9d9d9;
+}
+
+.messages_fixed {
+  position: fixed;
+  bottom: 0px;
+  right: 150px;
+  border-radius: 8px;
+  border: 1px solid rgb(217, 217, 217);
+  border-style: solid;
+  margin-bottom: -10px;
+  width: 350px;
+  background-color: black;
+}
+
+.message_label {
+  float: left;
+  width: 50%;
+  padding-left: 16px;
+  padding-top: 16px;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.msg_svg_icon {
+  float: right;
+  padding: 16px;
+}
+
+.svg_logo {
+  color: rgb(29, 161, 242);
+  padding-left: 40px;
+  padding-top: 10px;
+}
+
+.left-side-div {
+  float: left;
+  width: 22%;
+  border: 2px solid green;
+  position: relative;
+}
+
+.inside-left-side-div {
+}
+
+.list_left_ul {
+  padding-left: 40px;
+}
+
+.list_left_ul li {
+  padding-top: 20px;
+}
+
+.left_side_menu_span {
+  font-size: 24px;
+  font-weight: bolder;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  position: absolute;
+}
+.left_side_tweet_button {
+  font-size: 24px;
+  width: 200px;
+  font-weight: bolder;
+  background-color: rgb(29, 161, 242);
+  border-radius: 20px;
+  height: 40px;
+}
+
+.left_side_tweet_button h2 {
+  padding-left: 70px;
+  padding-top: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  position: absolute;
+}
+
+.middle-and-right-div {
+  float: right;
+  border: 2px solid blue;
+  width: 77%;
+}
+
+.middle_div {
+  float: left;
+  width: 60%;
+  border: 1px solid rgb(217, 217, 217);
+  height: 700px;
+}
+
+.right_div {
+  float: right;
+  width: 38%;
+  border: 2px solid red;
+  position: relative;
+}
+
+.search_div {
+  float: right;
+  border: rgb(29, 161, 242);
+  border-radius: 20px;
+  height: 40px;
+  width: 300px;
+  background-color: #202327;
+  border: 2px solid white;
+}
+
+.search_div svg {
+  padding-top: 10px;
+  padding-left: 12px;
+  min-width: 32px;
+  height: 1.25em;
+}
+
+.search_input {
+  background-color: #202327;
+  border: none;
+  margin: auto;
+  width: 60%;
+  height: 1.25em;
+}
+
+.what_happening_div {
+  border: 2px solid white;
+  float: right;
+  background-color: #202327;
+  margin-top: 50px;
+  margin-left: 300px;
+  height: 400px;
+  width: 300px;
+}
+
+.upper_menu {
+  border: 1px solid rgb(217, 217, 217);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  height: 40px;
+  margin-top: 10px;
+}
+
+.star_svg_span {
+  float: right;
+  right: 0px;
+  padding-right: 10px;
+}
+
+.home_span {
+  color: rgb(217, 217, 217);
+  font-size: 24px;
+  font-weight: bolder;
+  margin-left: 10px;
+  margin-top: 20px;
+}
