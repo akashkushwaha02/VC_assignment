@@ -1,0 +1,237 @@
+body {
+  background-color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(217, 217, 217);
+}
+
+.container {
+  height: 600px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.svg_icon_size {
+  height: 2rem;
+  fill: #d9d9d9;
+}
+
+.messages_fixed {
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 15px,
+    rgba(255, 255, 255, 0.15) 0px 0px 3px 1px;
+  position: fixed;
+  bottom: 0px;
+  right: 150px;
+  border-radius: 8px;
+
+  border: 1px solid;
+  border-style: solid;
+  margin-bottom: -10px;
+  width: 350px;
+  background-color: black;
+}
+
+.message_label {
+  float: left;
+  width: 50%;
+  padding-left: 16px;
+  padding-top: 16px;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.msg_svg_icon {
+  float: right;
+  padding: 16px;
+}
+
+.svg_logo {
+  color: rgb(29, 161, 242);
+  padding-left: 40px;
+  padding-top: 10px;
+}
+
+.left-side-div {
+  float: left;
+  width: 21%;
+
+  position: fixed;
+}
+
+.inside-left-side-div {
+}
+
+.list_left_ul {
+  padding-left: 40px;
+}
+
+.list_left_ul li {
+  padding-top: 20px;
+}
+
+.left_side_menu_span {
+  font-size: 24px;
+  font-weight: bolder;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  position: absolute;
+}
+.left_side_tweet_button {
+  font-size: 24px;
+  width: 200px;
+  font-weight: bolder;
+  background-color: rgb(29, 161, 242);
+  border-radius: 20px;
+  height: 40px;
+}
+
+.left_side_tweet_button h2 {
+  padding-left: 70px;
+  padding-top: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  position: absolute;
+}
+
+.middle-and-right-div {
+  float: right;
+
+  width: 77%;
+}
+
+.middle_div {
+  float: left;
+  width: 60%;
+
+  height: 700px;
+}
+
+.right_div {
+  float: right;
+  width: 38%;
+}
+
+.search_div {
+  border: rgb(29, 161, 242);
+  border-radius: 20px;
+  height: 40px;
+  width: 300px;
+  background-color: #202327;
+
+  position: fixed;
+  top: 10px;
+  right: 100px;
+}
+
+.search_div svg {
+  padding-top: 10px;
+  padding-left: 12px;
+  min-width: 32px;
+  height: 1.25em;
+}
+
+.search_input {
+  background-color: #202327;
+  border: #202327;
+  color: white;
+  font-weight: 600;
+  margin: auto;
+  width: 70%;
+  height: 1.25em;
+  margin-bottom: 40px;
+  padding: 10px;
+  padding-bottom: 2px;
+}
+
+.what_happening_div {
+  font-size: 24px;
+  font-weight: bolder;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  position: absolute;
+
+  float: right;
+  background-color: #202327;
+  right: 100px;
+  height: 400px;
+  width: 300px;
+  top: 70px;
+}
+
+.upper_menu {
+  border: 1px solid rgb(217, 217, 217);
+  border-top: none;
+
+  height: 50px;
+  padding-top: 10px;
+  position: sticky;
+  width: 577px;
+  background-color: black;
+}
+
+.star_svg_span {
+  float: right;
+  padding-right: 10px;
+  right: 300px;
+}
+
+.home_span {
+  color: rgb(217, 217, 217);
+  font-size: 24px;
+  font-weight: bolder;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.middle_content {
+  position: absolute;
+}
+
+.card {
+  position: relative;
+
+  border: 1px solid rgb(217, 217, 217);
+  border-bottom: none;
+  width: 577px;
+  height: 350px;
+}
+
+.profile_img {
+  border-radius: 9999px;
+  margin: 16px 0 0 16px;
+}
+
+.tweet_div {
+  position: absolute;
+  top: 20px;
+  left: 70px;
+}
+
+.post_image {
+  height: 200px;
+  width: 480px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.desc_tweet_p {
+  line-height: 10px;
+  margin-top: 10px;
+}
+
+.inside_what_happ_div {
+  height: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.image_msk {
+  float: right;
+  border-radius: 10px;
+  height: 50px;
+  margin-top: -40px;
+}
+
+.desc_tweet_p {
+  line-height: 15px;
+}
