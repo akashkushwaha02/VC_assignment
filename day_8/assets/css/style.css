@@ -5,7 +5,6 @@ body {
 }
 
 .container {
-  border: 2px solid red;
   height: 600px;
   margin-left: 50px;
   margin-right: 50px;
@@ -21,7 +20,8 @@ body {
   bottom: 0px;
   right: 150px;
   border-radius: 8px;
-  border: 1px solid rgb(217, 217, 217);
+  border-color: rgba(0, 0, 0, 0.04);
+  border: 1px solid;
   border-style: solid;
   margin-bottom: -10px;
   width: 350px;
@@ -50,9 +50,9 @@ body {
 
 .left-side-div {
   float: left;
-  width: 22%;
-  border: 2px solid green;
-  position: relative;
+  width: 21%;
+
+  position: fixed;
 }
 
 .inside-left-side-div {
@@ -93,32 +93,32 @@ body {
 
 .middle-and-right-div {
   float: right;
-  border: 2px solid blue;
+
   width: 77%;
 }
 
 .middle_div {
   float: left;
   width: 60%;
-  border: 1px solid rgb(217, 217, 217);
+
   height: 700px;
 }
 
 .right_div {
   float: right;
   width: 38%;
-  border: 2px solid red;
-  position: relative;
 }
 
 .search_div {
-  float: right;
   border: rgb(29, 161, 242);
   border-radius: 20px;
   height: 40px;
   width: 300px;
   background-color: #202327;
-  border: 2px solid white;
+
+  position: fixed;
+  top: 10px;
+  right: 100px;
 }
 
 .search_div svg {
@@ -130,35 +130,47 @@ body {
 
 .search_input {
   background-color: #202327;
-  border: none;
+  border: #202327;
+  color: white;
+  font-weight: 600;
   margin: auto;
-  width: 60%;
+  width: 70%;
   height: 1.25em;
+  margin-bottom: 30px;
+  padding: 10px;
+  padding-bottom: 2px;
 }
 
 .what_happening_div {
-  border: 2px solid white;
+  font-size: 24px;
+  font-weight: bolder;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  position: absolute;
+
   float: right;
   background-color: #202327;
-  margin-top: 50px;
-  margin-left: 300px;
+  right: 100px;
   height: 400px;
   width: 300px;
+  top: 70px;
 }
 
 .upper_menu {
   border: 1px solid rgb(217, 217, 217);
   border-top: none;
-  border-right: none;
-  border-left: none;
-  height: 40px;
-  margin-top: 10px;
+
+  height: 50px;
+  padding-top: 10px;
+  position: sticky;
+  width: 577px;
+  background-color: black;
 }
 
 .star_svg_span {
   float: right;
-  right: 0px;
   padding-right: 10px;
+  right: 300px;
 }
 
 .home_span {
@@ -167,4 +179,53 @@ body {
   font-weight: bolder;
   margin-left: 10px;
   margin-top: 20px;
+}
+
+.middle_content {
+  position: absolute;
+}
+
+.card {
+  position: relative;
+
+  border: 1px solid rgb(217, 217, 217);
+  border-bottom: none;
+  width: 577px;
+  height: 350px;
+}
+
+.profile_img {
+  border-radius: 9999px;
+  margin: 16px 0 0 16px;
+}
+
+.tweet_div {
+  position: absolute;
+  top: 20px;
+  left: 70px;
+}
+
+.post_image {
+  height: 200px;
+  width: 480px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.desc_tweet_p {
+  line-height: 10px;
+  margin-top: 10px;
+}
+
+.inside_what_happ_div {
+  height: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.image_msk {
+  float: right;
+  border-radius: 10px;
+  height: 50px;
+  margin-top: -40px;
 }
