@@ -20,12 +20,12 @@ body {
     rgba(255, 255, 255, 0.15) 0px 0px 3px 1px;
   position: fixed;
   bottom: 0px;
-  right: 150px;
+  right: 100px;
   border-radius: 8px;
 
   border: 1px solid;
   border-style: solid;
-  margin-bottom: -10px;
+  margin-bottom: -15px;
   width: 350px;
   background-color: black;
 }
@@ -61,11 +61,12 @@ body {
 }
 
 .list_left_ul {
-  padding-left: 40px;
+  padding-left: 30px;
 }
 
 .list_left_ul li {
-  padding-top: 20px;
+  padding-top: 5px;
+  padding-left: 10px;
 }
 
 .left_side_menu_span {
@@ -83,6 +84,7 @@ body {
   background-color: rgb(29, 161, 242);
   border-radius: 20px;
   height: 40px;
+  cursor: pointer;
 }
 
 .left_side_tweet_button h2 {
@@ -144,27 +146,29 @@ body {
 }
 
 .what_happening_div {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bolder;
   margin-left: 10px;
   margin-bottom: 10px;
   position: absolute;
-
+  border-radius: 10px;
   float: right;
   background-color: #202327;
   right: 100px;
   height: 400px;
   width: 300px;
   top: 70px;
+
+  z-index: -1;
 }
 
 .upper_menu {
-  border: 1px solid rgb(217, 217, 217);
+  border: 1px solid #15181c;
   border-top: none;
 
   height: 50px;
   padding-top: 10px;
-  position: sticky;
+  position: fixed;
   width: 577px;
   background-color: black;
 }
@@ -185,13 +189,17 @@ body {
 
 .middle_content {
   position: absolute;
+
+  top: 60px;
+  z-index: -1;
 }
 
 .card {
   position: relative;
 
-  border: 1px solid rgb(217, 217, 217);
+  border: 1px solid #15181c;
   border-bottom: none;
+
   width: 577px;
   height: 350px;
 }
@@ -234,4 +242,28 @@ body {
 
 .desc_tweet_p {
   line-height: 15px;
+}
+
+.name-elm {
+  width: 90%;
+
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 9999px;
+  padding: 5px 0 10px 0;
+}
+
+.name-elm li {
+  margin-left: -20px;
+}
+
+.name-elm:hover {
+  color: rgb(29 161 242 / 100%);
+  background: rgb(29 161 242 / 10%);
+  border-radius: 100px;
+  margin-left: -130px;
+}
+
+.name-elm:hover svg {
+  fill: rgb(29 161 242 / 100%);
 }
