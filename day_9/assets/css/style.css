@@ -23,7 +23,6 @@ body {
   right: 100px;
   border-radius: 8px;
 
-  border: 1px solid;
   border-style: solid;
   margin-bottom: -15px;
   width: 350px;
@@ -261,7 +260,7 @@ body {
   color: rgb(29 161 242 / 100%);
   background: rgb(29 161 242 / 10%);
   border-radius: 100px;
-  margin-left: -130px;
+  margin-left: -90px;
 }
 
 .name-elm:hover svg {
