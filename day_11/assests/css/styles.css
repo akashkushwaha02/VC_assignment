@@ -55,6 +55,7 @@ body {
 
 .hamburger-icon {
   padding-left: 5px;
+  cursor: pointer;
 }
 
 .line {
@@ -105,6 +106,7 @@ body {
   font-weight: 600;
   padding: 5px 10px 5px 10px;
   font-family: Roboto;
+  cursor: pointer;
 }
 
 .nav-login {
@@ -130,7 +132,7 @@ body {
 .parent_carousel {
   display: flex;
   margin-top: 40px;
-  padding-left: 20px;
+  padding-left: 10px;
   width: 90vw;
   background-color: #0c111b;
   z-index: -1;
@@ -147,6 +149,36 @@ body {
   width: 1200px;
   height: 400px;
   /* width: 90vw; */
+}
+
+.section_heading {
+  color: #ceccc1;
+  font-size: 20px;
+}
+
+.section_heading:hover {
+  color: #1f80e0;
+}
+
+.content_section {
+  margin-top: 50px;
+}
+
+.parent_tranding_image_card {
+  padding: 15px 15px 0 0;
+  display: flex;
+}
+
+.tranding_image_card {
+  padding-right: 10px;
+  display: flex;
+}
+
+.tranding_image_card > img {
+  cursor: pointer;
+  height: 200px;
+  width: 150px;
+  border-radius: 5px;
 }
 
 footer {
@@ -174,6 +206,10 @@ footer ul li a {
   text-decoration: none;
   color: #ceccc1;
   padding-right: 50px;
+}
+
+footer ul li a:hover {
+  color: #1f80e0;
 }
 
 .footer ul li {
