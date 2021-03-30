@@ -44,6 +44,10 @@ body {
   cursor: pointer;
 }
 
+.nav-items ul li:hover {
+  color: white;
+}
+
 #kids_icon {
   width: 65px;
   height: auto;
@@ -116,6 +120,7 @@ body {
   font-family: Roboto;
   color: #ceccc1;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .section {
@@ -209,7 +214,7 @@ body {
 }
 
 .tranding_image_card > img:hover {
-  padding: 0 10px;
+  margin: 10px 10px 10px 10px;
 }
 
 footer {
