@@ -126,31 +126,58 @@ body {
 .carousel {
   display: flex;
   flex-wrap: nowrap;
-  margin-top: 20px;
+  margin-top: 90px;
+  overflow: hidden;
 }
 
 .parent_carousel {
-  display: flex;
+  /* display: flex;
   margin-top: 40px;
+  overflow: hidden;
   padding-left: 10px;
   width: 90vw;
-  background-color: #0c111b;
-  z-index: -1;
-}
-
-.written_part {
-  flex: 1;
+  background-color: #0c111b; */
+  display: flex;
+  position: relative;
+  width: 500%;
+  animation: 10s carousel infinite;
 }
 
 .image_carousel {
-  flex: 3;
-  justify-content: flex-end;
   border-radius: 20px;
-  width: 1200px;
   height: 400px;
-  /* width: 90vw; */
+  width: 92vw;
 }
 
+@keyframes carousel {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  90% {
+    left: -300%;
+  }
+  100% {
+    left: -300%;
+  }
+}
 .section_heading {
   color: #ceccc1;
   font-size: 20px;
@@ -179,6 +206,10 @@ body {
   height: 200px;
   width: 150px;
   border-radius: 5px;
+}
+
+.tranding_image_card > img:hover {
+  padding: 0 10px;
 }
 
 footer {
