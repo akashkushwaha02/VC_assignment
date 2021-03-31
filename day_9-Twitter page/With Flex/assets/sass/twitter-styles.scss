@@ -1,6 +1,9 @@
 $backgroundColor: black;
+$defaultSkyBlueColor: rgb(29, 161, 242);
 $fontFamily: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 $fontColor: rgb(217, 217, 217);
+
+$defaultSizeFont: 16px;
 
 body {
   background-color: $backgroundColor;
@@ -8,9 +11,14 @@ body {
   color: $fontColor;
 }
 
-.container {
+%flex-properties {
   display: flex;
   justify-content: space-between;
+}
+
+.container {
+  @extend %flex-properties;
+
   border: 2px solid red;
   margin: 0 50px 0 50px;
 }
@@ -32,24 +40,25 @@ body {
 .message_label {
   float: left;
   width: 50%;
-  padding-left: 16px;
-  padding-top: 16px;
+  padding-left: $defaultSizeFont;
+  padding-top: $defaultSizeFont;
   font-size: 24px;
   font-weight: 900;
 }
 
 .msg_svg_icon {
   float: right;
-  padding: 16px;
+  padding: $defaultSizeFont;
 }
 
 .left-sidebar {
-  flex: 1;
-  display: flex;
+  flex: 1.2;
+  @extend %flex-properties;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  border: 2px solid blue;
+
+  position: fixed;
+  width: 250px;
 }
 
 .inside-left-side-div {
@@ -73,7 +82,175 @@ body {
 }
 
 .name-elm:hover {
-  color: rgb(29 161 242 / 100%);
+  color: $defaultSkyBlueColor;
   background: rgb(29 161 242 / 10%);
   border-radius: 100px;
+}
+
+.name-elm:hover svg {
+  fill: $defaultSkyBlueColor;
+}
+
+.svg_icon_size {
+  height: 2rem;
+  fill: $fontColor;
+}
+
+.left_side_menu_span {
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-top: 8px;
+  position: absolute;
+  padding-left: 10px;
+}
+
+.list_left_ul {
+  padding-top: 15px;
+}
+
+.list_left_ul li {
+}
+
+.left_side_tweet_button {
+  font-size: 24px;
+  margin-top: 10px;
+  width: 100%;
+  font-weight: 700;
+  background-color: $defaultSkyBlueColor;
+  border-radius: 20px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.left_side_tweet_button h2 {
+  padding-left: 90px;
+  padding-top: 10px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.profile-icon {
+  width: 90%;
+  flex-direction: row;
+  align-items: center;
+}
+
+.profile_img {
+  border-radius: 9999px;
+  margin: 16px 0 0 16px;
+}
+
+.desc_profile {
+  margin-bottom: 20px;
+}
+
+.middle-portion {
+  flex: 2;
+  height: 100vh;
+  margin-left: 260px;
+  border: 1px solid $fontColor;
+  margin-right: 20px;
+}
+
+.right-sidebar {
+  flex: 1.3;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.search_div {
+  height: 55px;
+  width: 364px;
+  border: 2px solid white;
+  position: fixed;
+}
+
+.parent_what_happening_div {
+  margin-top: 71px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 2px solid blue;
+}
+
+.what_happening_div {
+  height: 350px;
+
+  border: 2px solid $fontColor;
+}
+
+.who_to_follow {
+  margin-top: $defaultSizeFont;
+  height: 150px;
+  border: 2px solid $fontColor;
+}
+
+.fixed_header {
+  height: 52px;
+  border: 2px solid $fontColor;
+  position: fixed;
+  width: 555px;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header_home_txt {
+  border: 2px solid red;
+  margin-top: 10px;
+  margin-left: 16px;
+}
+
+.header_svg_icon {
+  margin-top: 10px;
+  margin-right: $defaultSizeFont;
+  border: 2px solid green;
+}
+
+.post_div {
+  display: flex;
+  justify-content: column;
+}
+
+.middle_whats_happening {
+  margin-top: 56px;
+  border: 2px solid red;
+  height: 180px;
+}
+
+.recent_post {
+  border: 2px solid green;
+
+  position: relative;
+
+  border: 1px solid #15181c;
+  border-bottom: none;
+
+  height: 350px;
+}
+
+.profile_img {
+  border-radius: 9999px;
+  margin: 16px 0 0 16px;
+}
+
+.tweet_div {
+  position: absolute;
+  top: 20px;
+  left: 70px;
+}
+
+.post_image {
+  height: 200px;
+  width: 480px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.desc_tweet_p {
+  line-height: 17px;
+  margin-top: 10px;
 }
