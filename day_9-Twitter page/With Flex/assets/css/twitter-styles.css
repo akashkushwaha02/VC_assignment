@@ -217,7 +217,7 @@ body {
 .middle_whats_happening {
   margin-top: 56px;
   border: 1px solid #15181c;
-  height: 180px;
+  height: 130px;
 }
 
 .recent_post {
@@ -252,16 +252,28 @@ body {
   padding-right: 10px;
 }
 
-.tweet {
+.tweet_logo-flex {
   display: flex;
-  border-bottom: 1px solid #e6ecf0;
-  margin-bottom: 2px;
-  padding: 10px 15px;
+  justify-content: space-between;
 }
 
-.tweet:hover {
-  background: rgba(0, 0, 0, 0.03);
+.btn-primary-tweet {
+  width: 80px;
+  height: 40px;
+  border-radius: 25px;
+  background: #8ed0f9;
+  color: #fff;
+  font-size: inherit;
+  font-weight: bold;
+  border: none;
   cursor: pointer;
+  outline: none;
+}
+
+.tweet {
+  display: flex;
+  margin-bottom: 2px;
+  padding: 10px 15px;
 }
 
 .tweet a {
@@ -289,16 +301,6 @@ body {
   font-weight: 700;
   color: #14171a;
   margin-right: 5px;
-}
-
-.tweet__author-slug {
-  color: #5b7083;
-  font-size: 15px;
-}
-
-.tweet__publish-time {
-  margin-left: 5px;
-  color: #657786;
 }
 
 .tweet__image {
