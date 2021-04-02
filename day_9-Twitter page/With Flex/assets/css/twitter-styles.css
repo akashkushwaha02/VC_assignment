@@ -165,13 +165,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  border: 2px solid blue;
   z-index: -1;
 }
 
 .what_happening_div {
   height: 350px;
-  border: 2px solid #d9d9d9;
 }
 
 .who_to_follow {
@@ -212,6 +210,7 @@ body {
 .posts_div {
   position: relative;
   z-index: -1;
+  top: 55px;
 }
 
 .middle_whats_happening {
@@ -252,67 +251,31 @@ body {
   padding-right: 10px;
 }
 
-.tweet_logo-flex {
-  display: flex;
-  justify-content: space-between;
+.what_happening_div {
+  font-size: 20px;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  position: absolute;
+  border-radius: 10px;
+  float: right;
+  background-color: #202327;
+  height: 400px;
+  width: 370px;
+  top: 70px;
+  z-index: -1;
 }
 
-.btn-primary-tweet {
-  width: 80px;
-  height: 40px;
-  border-radius: 25px;
-  background: #8ed0f9;
-  color: #fff;
-  font-size: inherit;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-  outline: none;
+.inside_what_happ_div {
+  height: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.tweet {
-  display: flex;
-  margin-bottom: 2px;
-  padding: 10px 15px;
-}
-
-.tweet a {
-  color: #1b94e0;
-  text-decoration: none;
-}
-
-.tweet a:hover {
-  text-decoration: underline;
-}
-
-.tweet__author-logo {
-  width: 49px;
-  height: 49px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.tweet__header {
-  display: flex;
-}
-
-.tweet__author-name {
-  font-size: 15px;
-  font-weight: 700;
-  color: #14171a;
-  margin-right: 5px;
-}
-
-.tweet__image {
-  width: 100%;
-  border-radius: 15px;
-  margin-top: 10px;
-}
-
-.home-page-logo {
-  height: 22.5px;
-  filter: invert(49%) sepia(89%) saturate(1341%) hue-rotate(175deg) brightness(96%) contrast(97%);
-  padding-right: 20px;
+.image_msk {
+  float: right;
+  border-radius: 10px;
+  height: 50px;
+  margin-top: -40px;
 }
 
 /*# sourceMappingURL=twitter-styles.css.map */

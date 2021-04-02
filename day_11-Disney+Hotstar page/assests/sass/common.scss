@@ -7,6 +7,7 @@ $defaultSize: 16px;
 body {
   background-color: $backgoundColor;
   font-family: $fontFamily;
+  overflow-x: hidden;
 }
 
 .header {
@@ -130,14 +131,8 @@ body {
   padding: 0 50px;
   margin-top: $defaultSize;
   position: relative;
+  margin-top: 80px;
   z-index: -1;
-}
-
-.carousel {
-  display: flex;
-  flex-wrap: nowrap;
-  margin-top: 90px;
-  overflow: hidden;
 }
 
 .parent_carousel {
@@ -150,7 +145,11 @@ body {
 .image_carousel {
   border-radius: 20px;
   height: 400px;
-  width: 92vw;
+  width: 1340px;
+}
+
+.space-image {
+  width: 30px;
 }
 
 @keyframes carousel {
@@ -179,7 +178,7 @@ body {
     left: -300%;
   }
   100% {
-    left: -300%;
+    left: -400%;
   }
 }
 .section_heading {
@@ -194,6 +193,53 @@ body {
   margin-top: 50px;
 }
 
+// .parent_carousel {
+//   display: flex;
+//   position: relative;
+//   width: 500%;
+//   animation: 10s carousel infinite;
+// }
+
+// .image_carousel {
+//   border-radius: 20px;
+//   height: 400px;
+//   width: 1340px;
+// }
+
+// .space-image {
+//   width: 30px;
+// }
+
+// @keyframes carousel {
+//   0% {
+//     left: 0;
+//   }
+//   20% {
+//     left: 0;
+//   }
+//   25% {
+//     left: -100%;
+//   }
+//   45% {
+//     left: -100%;
+//   }
+//   50% {
+//     left: -200%;
+//   }
+//   70% {
+//     left: -200%;
+//   }
+//   75% {
+//     left: -300%;
+//   }
+//   90% {
+//     left: -300%;
+//   }
+//   100% {
+//     left: -400%;
+//   }
+// }
+
 .parent_tranding_image_card {
   padding: 15px 15px 0 0;
   display: flex;
@@ -202,6 +248,26 @@ body {
 .tranding_image_card {
   padding-right: 10px;
   display: flex;
+  position: relative;
+  animation: 15s parent_tranding_image_card infinite;
+}
+
+@keyframes parent_tranding_image_card {
+  0% {
+    left: 0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -20%;
+  }
+  45% {
+    left: -30%;
+  }
+  50% {
+    left: -50%;
+  }
 }
 
 .tranding_image_card > img {
