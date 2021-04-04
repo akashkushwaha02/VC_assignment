@@ -1,0 +1,115 @@
+$backgroundColor: #35363a;
+$GoogleMainLogo: #fbfbfb;
+$smallHeading: #b2b3b4;
+$recentBackground: #1e1f22;
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: $backgroundColor;
+  height: 100vh;
+  @extend %flex-center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 38%;
+}
+
+// .header_logo {
+//   @extend %flex-center;
+//   font-size: 50px;
+//   font-weight: 900;
+//   margin: 0 0 30px 0;
+//   color: $GoogleMainLogo;
+// }
+
+.header_logo {
+  @extend %flex-center;
+
+  margin: 0 0 30px 0;
+  color: $GoogleMainLogo;
+}
+
+img {
+  height: auto;
+  width: 60%;
+}
+
+.search_div input {
+  width: 400px;
+  border-radius: 20px;
+  padding: 10px 15px 10px 15px;
+  border-radius: 20px;
+  border: none;
+  font-weight: 600;
+}
+
+.search_div {
+  @extend %flex-center;
+  width: 500px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  border: 1px solid $backgroundColor;
+  box-shadow: #384e92;
+}
+
+.search_div svg {
+  fill: $smallHeading;
+  height: 30px;
+  width: 30px;
+  margin-top: 3px;
+}
+
+.recent {
+  @extend %flex-center;
+}
+
+.icons_recent {
+  margin: 8px 0 0 8px;
+  border-radius: 999px;
+}
+
+.recent_circle {
+  height: 50px;
+  width: 50px;
+  background-color: $recentBackground;
+  display: flex;
+  justify-content: space-between;
+  margin: 2px 15px 0 15px;
+  border-radius: 100px;
+}
+
+p {
+  color: $smallHeading;
+  @extend %flex-center;
+
+  font-size: small;
+}
+
+.upper_icon {
+  margin-bottom: 35px;
+}
+
+.whole_recent {
+  @extend %flex-center;
+  flex-direction: row;
+  width: 80%;
+  height: auto;
+}
+
+.upper_recent {
+  display: flex;
+  flex-wrap: wrap;
+}
