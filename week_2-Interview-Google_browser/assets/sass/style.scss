@@ -1,22 +1,37 @@
-.container {
-  height: 90vh;
+$backgroundColor: #35363a;
+$GoogleMainLogo: #fbfbfb;
+$smallHeading: #b2b3b4;
+$recentBackground: #1e1f22;
+
+%flex-center {
   display: flex;
   justify-content: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: $backgroundColor;
+  height: 100vh;
+  @extend %flex-center;
   align-items: center;
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 38%;
 }
 
 .header_logo {
-  display: flex;
-  justify-content: center;
+  @extend %flex-center;
   font-size: 50px;
   font-weight: 900;
   margin: 0 0 30px 0;
+  color: $GoogleMainLogo;
 }
 
 .search_div input {
@@ -24,34 +39,31 @@
   border-radius: 20px;
   padding: 10px 15px 10px 15px;
   margin-bottom: 20px;
+  border: 1px solid $backgroundColor;
 }
 
 .search_div {
-  display: flex;
-  justify-content: center;
+  @extend %flex-center;
 }
 
 .recent {
-  display: flex;
-  justify-content: center;
+  @extend %flex-center;
 }
 
 .recent_circle {
   height: 50px;
   width: 50px;
-  background-color: black;
+  background-color: $recentBackground;
   display: flex;
-
   justify-content: space-between;
-
   margin: 2px 15px 0 15px;
   border-radius: 100px;
 }
 
 p {
-  color: black;
+  color: $smallHeading;
   margin-left: 10px;
-
+  margin-bottom: 30px;
   font-size: small;
 }
 
@@ -60,10 +72,8 @@ p {
 }
 
 .whole_recent {
-  display: flex;
+  @extend %flex-center;
   flex-direction: row;
-  justify-content: center;
-
   width: 80%;
   height: auto;
 }
