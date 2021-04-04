@@ -1,0 +1,103 @@
+<!-- 
+    Requirement
+lottery card(center);
+logo;
+position left fixed also contain the picture;
+right scrollable(if add more element);
+create using flex,scss;
+right forms will contain - fname,lname,phone numeber,email,pass,confPass,two checkbox,create button, 
+also contain some anchor links
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Week 3 | lottery</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="lottery_card">
+        <div class="left_part">
+          <div class="logo">
+            <img src="./assets/images/lottery.webp" />
+            <div class="logo_text">lottery display</div>
+          </div>
+          <div class="logo_text_bolder">
+            A few click away from <br />creating your lottery Display
+          </div>
+          <div class="brand_img">
+            <img src="./assets/images/icon.webp" class="brand_img" />
+          </div>
+        </div>
+        <div class="right_part">
+          <div class="right_top">
+            <div class="register">Register</div>
+            <div>
+              Manage all your lottery efficiently
+              <p>
+                Lets get you all set up so you can verify your personal account
+                and begin setting up your profile
+              </p>
+            </div>
+          </div>
+          <div class="right_last">
+            <div class="input_field">
+              <div class="right_above">
+                <label class="labels"> First Name </label>
+                <input type="text" />
+              </div>
+              <div class="right_above">
+                <label class="labels"> Last Name </label>
+                <input type="text" />
+              </div>
+            </div>
+            <div class="input_field">
+              <div class="right_above">
+                <label class="labels"> Phone number </label>
+                <input type="number" />
+              </div>
+              <div class="right_above">
+                <label class="labels"> Email </label>
+                <input type="email" />
+              </div>
+            </div>
+
+            <div class="input_field">
+              <div class="right_above">
+                <label class="labels"> Password </label>
+                <input type="password" />
+              </div>
+              <div class="right_above">
+                <label class="labels"> Confirm Password </label>
+                <input type="password" />
+              </div>
+            </div>
+            <div class="check_box">
+              <input type="checkbox" />
+              <sapn>Yes, I want Lottery emails</span>
+              
+            </div>
+            <div class="check_box">
+              
+                <input type="checkbox" />
+                <span>
+                  I agree,to all the <a>Term</a>,<a>Privacy Policy</a> and
+                  <a>Fees</a>
+              </span>
+              </div>
+            
+            <div>
+              <button type="submit">Create Account</button>
+
+              <div>Already have an account? Log in</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
