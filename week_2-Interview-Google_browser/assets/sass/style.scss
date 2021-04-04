@@ -26,28 +26,59 @@ body {
   width: 38%;
 }
 
+// .header_logo {
+//   @extend %flex-center;
+//   font-size: 50px;
+//   font-weight: 900;
+//   margin: 0 0 30px 0;
+//   color: $GoogleMainLogo;
+// }
+
 .header_logo {
   @extend %flex-center;
-  font-size: 50px;
-  font-weight: 900;
+
   margin: 0 0 30px 0;
   color: $GoogleMainLogo;
+}
+
+img {
+  height: auto;
+  width: 60%;
 }
 
 .search_div input {
   width: 400px;
   border-radius: 20px;
   padding: 10px 15px 10px 15px;
-  margin-bottom: 20px;
-  border: 1px solid $backgroundColor;
+  border-radius: 20px;
+  border: none;
+  font-weight: 600;
 }
 
 .search_div {
   @extend %flex-center;
+  width: 500px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  border: 1px solid $backgroundColor;
+  box-shadow: #384e92;
+}
+
+.search_div svg {
+  fill: $smallHeading;
+  height: 30px;
+  width: 30px;
+  margin-top: 3px;
 }
 
 .recent {
   @extend %flex-center;
+}
+
+.icons_recent {
+  margin: 8px 0 0 8px;
+  border-radius: 999px;
 }
 
 .recent_circle {
@@ -62,8 +93,8 @@ body {
 
 p {
   color: $smallHeading;
-  margin-left: 10px;
-  margin-bottom: 30px;
+  @extend %flex-center;
+
   font-size: small;
 }
 

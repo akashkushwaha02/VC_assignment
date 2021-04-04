@@ -1,4 +1,4 @@
-.whole_recent, .recent, .search_div, .header_logo, .container {
+.whole_recent, p, .recent, .search_div, .header_logo, .container {
   display: flex;
   justify-content: center;
 }
@@ -21,18 +21,43 @@ body {
 }
 
 .header_logo {
-  font-size: 50px;
-  font-weight: 900;
   margin: 0 0 30px 0;
   color: #fbfbfb;
+}
+
+img {
+  height: auto;
+  width: 60%;
 }
 
 .search_div input {
   width: 400px;
   border-radius: 20px;
   padding: 10px 15px 10px 15px;
+  border-radius: 20px;
+  border: none;
+  font-weight: 600;
+}
+
+.search_div {
+  width: 500px;
+  border-radius: 20px;
   margin-bottom: 20px;
+  background-color: white;
   border: 1px solid #35363a;
+  box-shadow: #384e92;
+}
+
+.search_div svg {
+  fill: #b2b3b4;
+  height: 30px;
+  width: 30px;
+  margin-top: 3px;
+}
+
+.icons_recent {
+  margin: 8px 0 0 8px;
+  border-radius: 999px;
 }
 
 .recent_circle {
@@ -47,8 +72,6 @@ body {
 
 p {
   color: #b2b3b4;
-  margin-left: 10px;
-  margin-bottom: 30px;
   font-size: small;
 }
 
