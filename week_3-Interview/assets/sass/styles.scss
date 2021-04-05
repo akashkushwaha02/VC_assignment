@@ -21,14 +21,17 @@ body {
 .container {
   background-color: $bg;
   @extend %flex-center;
+  align-items: center;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
 }
 
 .lottery_card {
   display: flex;
-
+  justify-content: center;
   align-items: center;
+  height: 80%;
+  width: auto;
 }
 
 .left_part {
@@ -47,12 +50,19 @@ body {
   flex: 1;
 }
 
+.logo_img {
+  height: 40px;
+  width: 40px;
+  margin-top: 18px;
+  margin-left: 20px;
+}
+
 .logo_text {
   color: $left_text_color;
 
   font-size: 20px;
   font-weight: 600;
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
 .logo_text_bolder {
@@ -71,26 +81,58 @@ body {
 }
 
 .right_part {
+  background-color: $right_card_bg;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+}
+
+.right_container {
+  border: 2px solid red;
+  width: 90%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  //align-items: center;
 }
 
 .right_top {
   flex: 1;
+  border: 2px solid green;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.register {
+  font-weight: 900;
+  font-size: 18px;
+  color: $right_text_color_bold;
+}
+
+.right_text_bolder {
+  font-weight: 800;
+  margin-top: 20px;
+  color: $right_text_color_bold;
+}
+
+.right_text {
+  color: $right_text_color;
+  font-size: 14px;
 }
 
 .input_field {
   display: flex;
-}
-
-.check_box {
-  display: flex;
-  flex-direction: column;
-}
-
-.right_above {
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
+}
+
+.right_last {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid blue;
 }

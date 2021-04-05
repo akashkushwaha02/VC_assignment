@@ -11,13 +11,17 @@ body {
 
 .container {
   background-color: #02d0e8;
+  align-items: center;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
 }
 
 .lottery_card {
   display: flex;
+  justify-content: center;
   align-items: center;
+  height: 80%;
+  width: auto;
 }
 
 .left_part {
@@ -34,11 +38,18 @@ body {
   flex: 1;
 }
 
+.logo_img {
+  height: 40px;
+  width: 40px;
+  margin-top: 18px;
+  margin-left: 20px;
+}
+
 .logo_text {
   color: white;
   font-size: 20px;
   font-weight: 600;
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
 .logo_text_bolder {
@@ -55,28 +66,59 @@ body {
 }
 
 .right_part {
+  background-color: white;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+}
+
+.right_container {
+  border: 2px solid red;
+  width: 90%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .right_top {
   flex: 1;
+  border: 2px solid green;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.register {
+  font-weight: 900;
+  font-size: 18px;
+  color: #5b748a;
+}
+
+.right_text_bolder {
+  font-weight: 800;
+  margin-top: 20px;
+  color: #5b748a;
+}
+
+.right_text {
+  color: #c0c4c7;
+  font-size: 14px;
 }
 
 .input_field {
   display: flex;
-}
-
-.check_box {
-  display: flex;
-  flex-direction: column;
-}
-
-.right_above {
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
+}
+
+.right_last {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid blue;
 }
 
 /*# sourceMappingURL=styles.css.map */
