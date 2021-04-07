@@ -1,0 +1,185 @@
+.card {
+  position: absolute;
+  height: 500px;
+  width: 350px;
+  left: 36%;
+  top: 90px;
+  background-color: black;
+  opacity: 0.6;
+}
+
+.inside_card {
+  position: relative;
+  height: 500px;
+  width: 350px;
+  left: 37%;
+  top: 20px;
+}
+
+#signIn_label {
+  position: relative;
+  color: white;
+  left: 5px;
+  font-size: 30px;
+}
+
+.form-group {
+  position: relative;
+  left: 30px;
+  top: 30px;
+}
+
+.input_tag {
+  background-color: #323332;
+  color: white;
+  border: none;
+  padding: 15px;
+  width: 65%;
+  border-radius: 5px;
+  margin: 8px;
+}
+
+#signin_btn {
+  border: none;
+  position: relative;
+  padding: 14px;
+  background-color: #e5111d;
+  border-radius: 4px;
+  color: white;
+  font-weight: 800;
+  left: 10px;
+  margin-top: 20px;
+  width: 73%;
+  cursor: pointer;
+}
+
+#remember {
+  color: #7f8182;
+}
+
+a {
+  text-decoration: none;
+  color: #7f8182;
+  cursor: pointer;
+}
+
+#extra {
+  color: #7f8182;
+  margin-left: 40px;
+  margin-top: 60px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-flex a {
+  display: flex;
+  margin-left: 60px;
+  margin-top: 3px;
+}
+
+@media only screen and (max-width: 480px) {
+  /*--- Mobile portrait ---*/
+  .card {
+    height: 100%;
+    width: 100%;
+    left: 0%;
+    top: 70px;
+    background-color: black;
+    opacity: 1;
+  }
+
+  .inside_card {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  #signIn_label {
+    position: relative;
+    color: white;
+    left: 5px;
+    font-size: 30px;
+  }
+
+  .form-group {
+    position: relative;
+    left: 16px;
+    top: 0;
+  }
+
+  .input_tag {
+    padding: 15px;
+    width: 85%;
+  }
+
+  #signin_btn {
+    left: 10px;
+    margin-top: 20px;
+    width: 93%;
+    cursor: pointer;
+  }
+
+  #extra {
+    margin-left: 10px;
+  }
+
+  .d-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .d-flex > a {
+    position: relative;
+    right: 20px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 800px) {
+  .card {
+    height: 500px;
+    width: 400px;
+    left: 22%;
+    top: 90px;
+    opacity: 0.6;
+  }
+
+  .inside_card {
+    position: relative;
+    height: 500px;
+    width: 400px;
+    left: 23%;
+    top: 10px;
+  }
+
+  .input_tag {
+    padding: 15px;
+    width: 70%;
+  }
+
+  #signin_btn {
+    margin-top: 22px;
+    width: 77%;
+  }
+
+  #extra {
+    margin-left: 45px;
+  }
+
+  .d-flex {
+    display: flex;
+    margin-left: 12px;
+    margin-top: 0;
+  }
+
+  .d-flex > a {
+    position: relative;
+    left: 30px;
+  }
+}
+
+/*# sourceMappingURL=signin.css.map */
