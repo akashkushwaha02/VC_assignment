@@ -36,12 +36,15 @@ body {
 
 .left_part {
   background-color: $left_card_bg;
+  position: fixed;
+
   display: flex;
   flex-direction: column;
   align-content: center;
 
-  height: 100%;
-  width: 40%;
+  height: 80%;
+  width: 30%;
+  right: 55%;
   //   position: fixed;
 }
 
@@ -83,10 +86,12 @@ body {
 .right_part {
   background-color: $right_card_bg;
   height: 100%;
+  position: relative;
+  left: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  overflow: scroll;
 }
 
 .right_container {
