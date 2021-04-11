@@ -52,22 +52,21 @@ body {
     margin-left: 10px;
     margin-bottom: 0;
   }
+
   .svg-icon-netflix-logo {
     height: 30px;
     width: 80px;
   }
 }
-@media only screen and (min-width: 480px) and (max-width: 690px) {
+@media only screen and (min-width: 480px) and (max-width: 800px) {
   /*--- Mobile landscape ---*/
   .bg_image_img {
-    height: 100vh;
+    height: 100%;
     width: 100%;
   }
 }
-
 @media only screen and (min-width: 690px) and (max-width: 800px) {
   /*--- Tablet portrait ---*/
-
   .bg_image_img {
     height: 100vh;
     width: 100%;
@@ -80,6 +79,7 @@ body {
     margin-left: 25px;
     margin-bottom: 0;
   }
+
   .svg-icon-netflix-logo {
     height: 45px;
     width: 167px;
@@ -99,3 +99,5 @@ body {
     width: 100%;
   }
 }
+
+/*# sourceMappingURL=common.css.map */

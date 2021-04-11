@@ -36,7 +36,7 @@
   padding: 15px;
   width: 65%;
   border-radius: 5px;
-  margin: 08px;
+  margin: 8px;
 }
 
 #signin_btn {
@@ -66,7 +66,6 @@ a {
 #extra {
   color: #7f8182;
   margin-left: 40px;
-
   margin-top: 60px;
 }
 
@@ -80,9 +79,8 @@ a {
   margin-top: 3px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 800px) {
   /*--- Mobile portrait ---*/
-
   .card {
     height: 100%;
     width: 100%;
@@ -141,14 +139,12 @@ a {
     right: 20px;
   }
 }
-
 @media only screen and (min-width: 480px) and (max-width: 800px) {
   .card {
     height: 500px;
     width: 400px;
     left: 22%;
     top: 90px;
-
     opacity: 0.6;
   }
 
@@ -176,7 +172,6 @@ a {
 
   .d-flex {
     display: flex;
-
     margin-left: 12px;
     margin-top: 0;
   }
@@ -186,3 +181,5 @@ a {
     left: 30px;
   }
 }
+
+/*# sourceMappingURL=signin.css.map */

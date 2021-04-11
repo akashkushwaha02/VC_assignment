@@ -8,16 +8,18 @@
   </head>
   <body>
     <script>
-      var a = 786;
+      var a;
       function getType(a) {
         if (a instanceof Array) {
-          console.log("Array");
-        } else {
-          console.log(typeof a);
+          return console.log("Array");
         }
+        if (a == undefined) {
+          return console.log("Undefined");
+        }
+        return console.log(typeof a);
       }
 
-      getType(a);
+      var value = getType(a);
     </script>
   </body>
 </html>
