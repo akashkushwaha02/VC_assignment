@@ -1,0 +1,24 @@
+
+Requirement:-
+BankCalculator:
+    1.bank balance
+    2.credit from balance
+    3.debit from balance
+    4.interest applied in bank balance.
+
+
+Psudo code:-
+    1.Take the variable balance.
+    2.choose the type and amount 
+        if(variable > 0 && type is credit)
+            return deduct credit amount form variable
+        if(debit)
+            return add debit amount in variable                            
+        
+    3.For applying interest in variable 
+        if(clickOnInterest && variable is not null){
+            return apply interest on it and show the interst and add it in variable
+        }
+
+        return Something is wrng
+
