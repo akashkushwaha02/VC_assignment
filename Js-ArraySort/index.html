@@ -11,8 +11,30 @@
     //Requirements
     //   1.Replace all duplicate items
     //   2.Count frequency of duplicates
+    //   3.using single for loop
 
     var items = [1, 2, 2, 2, 2, 5, 3, 5, 7, 3, 6, 7];
+    var newArr = [];
+    var newCount = 0;
+    var count = new Array(items.length);
+    count.fill(false);
+
+    if (count instanceof Array) {
+      console.log("yes" + " " + typeof count);
+    }
+    for (var i = 0; i < items.length; i++) {
+      if (count[items[i]] > 0) {
+        console.log(items[i]);
+        
+      } else {
+        if (items[i] != undefined) {
+          newArr[newCount] = items[i];
+          newCount++;
+        }
+        count[items[i]]++;
+      }
+    }
+    console.log(newArr);
   </script>
 </html>
 
@@ -23,10 +45,29 @@
     for(var i=0;i <array.length;i++){
         for(var j=i+1;j<array.length-1;j++){
             if(array[i] == array[j]){
-                array[j] = undefined;                
+                                
                 frequency += 1;                
             }
             console.log('Occurence of '+ array[i] + ' is ' + frequency + ' times');
         }
     }
+-->
+
+<!-- psedo code
+  array
+  new araay
+  count
+  store object in count of array and pass size 
+  count.fill(0)-- this will fill all the value with zero
+  new array count
+  for(i=0 to i<length){
+    if(count[array value] >0){
+      print(array value)
+    }else{
+      if(!only when there is undefined or empty){
+        newArray[increment++] = array
+      }
+      array++      
+    }    
+  }
 -->
