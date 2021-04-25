@@ -25,14 +25,13 @@
     for (var i = 0; i < items.length; i++) {
       if (count[items[i]] > 0) {
         console.log(items[i]);
-        
-      } else {
-        if (items[i] != undefined) {
-          newArr[newCount] = items[i];
-          newCount++;
-        }
-        count[items[i]]++;
+        continue;
       }
+      if (items[i] != undefined) {
+        newArr[newCount] = items[i];
+        newCount++;
+      }
+      count[items[i]]++;
     }
     console.log(newArr);
   </script>
